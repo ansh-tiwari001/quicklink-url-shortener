@@ -58,7 +58,7 @@ form.addEventListener("submit", (e) => {
 
     saveLink(code, longUrl);
 
-    const shortUrl = `${window.location.origin}${window.location.pathname}?c=${code}`;
+    const shortUrl = `${BASE_URL}/?c=${code}`;
     shortUrlText.textContent = shortUrl;
     resultDiv.classList.remove("hidden");
 
