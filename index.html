@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="QuickLink - Fast and simple URL shortener built with pure JavaScript." />
+    <title>QuickLink | URL Shortener</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+    <main class="container">
+        <div class="card">
+            <h1>QuickLink</h1>
+            <p class="subtitle">Generate short links instantly</p>
+
+            <!-- Form for Enter key support -->
+            <form id="shortenForm">
+                <input 
+                    type="url"
+                    id="longUrl"
+                    placeholder="Enter your long URL here..."
+                    required
+                    autocomplete="off"
+                />
+
+                <button type="submit" id="shortenBtn">
+                    Shorten URL
+                </button>
+            </form>
+
+            <!-- Result Section -->
+            <div id="result" class="result hidden">
+                <div class="short-box">
+                    <span id="shortUrlText"></span>
+                    <button type="button" id="copyBtn">Copy</button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
