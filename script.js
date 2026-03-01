@@ -4,7 +4,7 @@ const resultDiv = document.getElementById("result");
 const shortUrlText = document.getElementById("shortUrlText");
 const copyBtn = document.getElementById("copyBtn");
 
-const BASE_URL = "https://ansh-tiwari001.github.io/quicklink-url-shortener";
+const BASE_URL = "https://ansh-tiwari001.github.io/quicklink";
 /* Generate Random Code */
 function generateCode(length = 6) {
     const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
